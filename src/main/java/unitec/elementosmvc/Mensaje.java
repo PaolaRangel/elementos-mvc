@@ -38,6 +38,12 @@ public class Mensaje {
     
     String cuerpo;
 
+    public Mensaje(String id, LocalDate fecha, String cuerpo) {
+        this.id = id;
+        this.fecha = fecha;
+        this.cuerpo = cuerpo;
+    }
+
 
     public Mensaje() {
     }
@@ -53,6 +59,11 @@ public class Mensaje {
 
     public String getCuerpo() {
         return cuerpo;
+    }
+
+    @Override
+    public String toString() {
+        return "Mensaje{" + "id=" + id + ", fecha=" + fecha + ", cuerpo=" + cuerpo + '}';
     }
 
     public void setCuerpo(String cuerpo) {
