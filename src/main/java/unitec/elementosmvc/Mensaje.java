@@ -26,6 +26,12 @@ public class Mensaje {
         this.cuerpo = cuerpo;
     }
 
+    public Mensaje(String cuerpo) {
+        this.cuerpo = cuerpo;
+    }
+
+   
+
   
 
     public LocalDate getFecha() {
