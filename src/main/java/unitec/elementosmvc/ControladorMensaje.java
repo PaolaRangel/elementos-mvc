@@ -31,7 +31,7 @@ public class ControladorMensaje {
     }
     //CASO b) BUSCAR pot ig
 
-    @GetMapping("/mensaje{id}")
+    @GetMapping("/mensaje/{id}")
     //las significan que el 
     //necesita introducir un valor conocida como variable de ruta
     public Mensaje buscarPorId(@PathVariable String id){
