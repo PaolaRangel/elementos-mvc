@@ -76,7 +76,7 @@ public class ControladorMensaje {
                 return estatus;
     }
         //Caso e borrar
-@DeleteMapping("/mensaje")
+@DeleteMapping("/mensaje/{id}")
     public Estatus borrarPoRId(@PathVariable String id)throws Exception{
         
         
@@ -86,7 +86,7 @@ public class ControladorMensaje {
        
         Estatus e = new Estatus();
         e.setSuccess(true);
-        e.setMensaje("Mensaje guardado con exito!!");
+        e.setMensaje("Mensaje borrado con exito!!");
                 return e;
     
     }
